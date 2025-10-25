@@ -43,7 +43,7 @@ public class JsonHandler {
             }
             root.add("results", resultsArray);
             gson.toJson(root, writer);
-            System.out.println("✅ Results saved to " + outputPath);
+            System.out.println(" Results saved to " + outputPath);
         } catch (IOException e) {
             System.err.println("Error writing JSON: " + e.getMessage());
         }
